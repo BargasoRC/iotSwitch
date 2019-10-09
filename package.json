@@ -1,0 +1,29 @@
+{
+  "name": "iotswitch",
+  "version": "1.0.0",
+  "description": "IOT switch",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/futureCode16/iotSwitch.git"
+  },
+  "keywords": [
+    "node",
+    "index.js"
+  ],
+  "author": "Renan Bargaso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/futureCode16/iotSwitch/issues"
+  },
+  "homepage": "https://github.com/futureCode16/iotSwitch#readme",
+  "engines": {
+    "node": "v10.16.3"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
