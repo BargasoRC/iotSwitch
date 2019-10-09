@@ -1,7 +1,7 @@
 var on = document.getElementById('on');
 var off = document.getElementById('off');
 var Status = document.getElementById('text');
-var timeStamp = new Date();
+// var timeStamp = new Date();
 
 client = mqtt.connect("wss://test.mosquitto.org:8081/mqtt")
 
@@ -15,7 +15,7 @@ on.addEventListener('click', function (prevent) {
   off.disabled = false;
   Status.innerHTML = 'The device is currently turned On';
 
-  client.publish('bargaso/device/status', 'Turned ON: ' + timeStamp, function (err) {
+  client.publish('bargaso/device/status', 'Turned ON: ' + new Date(), function (err) {
     if (err) {
       swal({
         title: "Error!",
@@ -31,7 +31,7 @@ off.addEventListener('click', function () {
 
   Status.innerHTML = 'The device is currently turned Off';
 
-  client.publish('bargaso/device/status', 'Turned OFF: ' + timeStamp, function (err) {
+  client.publish('bargaso/device/status', 'Turned OFF: ' + new Date(), function (err) {
     if (err) {
       swal({
         title: "Error!",
